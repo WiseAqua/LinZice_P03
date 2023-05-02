@@ -3,16 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Monster : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+{ 
+    [SerializeField]
+    private MonsterData _data;
+
+    public MonsterData Data => _data;
+
+    private void Awake()
     {
-        
+        Debug.Log("Damage: " + _data.Damage);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDrawGizmosSelected()
     {
-        
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _data.RangeOfAwareness);
+
+        Gizmos.color = Color.cyan;
+        Vector3 ray = transform.forward * _data.RangeOfAwareness;
+        Gizmos.DrawRay(transform.position, ray);
     }
+
 }
