@@ -795,6 +795,22 @@ PrefabInstance:
       value: EnemySpawn
       objectReference: {fileID: 0}
     - target: {fileID: 756219204512760232, guid: c06f02301d7b05647b14cfc638d10325, type: 3}
+      propertyPath: MaxWaves
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 756219204512760232, guid: c06f02301d7b05647b14cfc638d10325, type: 3}
+      propertyPath: InfiniteWaves
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756219204512760232, guid: c06f02301d7b05647b14cfc638d10325, type: 3}
+      propertyPath: StartSpawning
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 756219204512760232, guid: c06f02301d7b05647b14cfc638d10325, type: 3}
+      propertyPath: AmountToSpawnPerWave
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 756219204512760232, guid: c06f02301d7b05647b14cfc638d10325, type: 3}
       propertyPath: onAllObjectsDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1829513442}
